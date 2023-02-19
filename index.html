@@ -4,9 +4,70 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
+
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <!--      HEADER
+    ----------------------  -->
+    <header class="header-index">
+      <nav class="nav">
+        <a class="logo">
+          <img src="#" alt="Логотип магазина мороженого 'Глейси'" class="logo-img">
+        </a>
+
+        <ul class="nav-list">
+          <!-- Выпадающее меню каталога
+          ----------------------------- -->
+          <li class="nav-item">
+            <select class="nav-select" aria-label="Меню каталога">
+              <option class="nav-option" value="catalog">
+                <a href="catalog.html" class="nav-link-catalog">Каталог</a>
+              </option>
+              <option class="nav-option" value="new">
+                <a href="#" class="nav-link-catalog">Новинки</a>
+              </option>
+              <option class="nav-option" value="creamy">
+                <a href="#" class="nav-link-catalog">Сливочное</a>
+              </option>
+              <option class="nav-option" value="sherbets">
+                <a href="#" class="nav-link-catalog">Щербеты</a>
+              </option>
+              <option class="nav-option" value="fruit ice">
+                <a href="#" class="nav-link-catalog">Фруктовый лед</a>
+              </option>
+              <option class="nav-option" value="melorin">
+                <a href="#" class="nav-link-catalog">Мелорин</a>
+              </option>
+            </select>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Доставка и оплата</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">О компании</a>
+          </li>
+        </ul>
+
+        <ul class="nav-list nav-user">
+          <li class="nav-item">
+            <a href="tel:+78005558628" class="nav-link">+7 800 555-86-28</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Вход</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">2 товара</a>
+          </li>
+        </ul>
+
+      </nav>
+    </header>
 
   </body>
 </html>
