@@ -88,6 +88,86 @@
         <h1 class="header-breadcrumbs-title">Сливочное мороженое</h1>
       </header>
 
+      <!-- Фильтр товаров
+      ------------------- -->
+      <section class="catalog-filter">
+        <h2 class="visually-hidden">Фильтр выбора мороженого</h2>
+
+        <form action="https://echo.htmlacademy.ru" class="catalog-form" method="get">
+
+          <!-- Сортировка -->
+          <fieldset class="catalog-form-group">
+            <legend class="catalog-form-title">Сортировка:</legend>
+            <select class="catalog-form-select" name="sorting" id="sorting">
+              <option class="catalog-form-option" value="popular">по популярности</option>
+              <option class="catalog-form-option" value="price">по стоимости</option>
+              <option class="catalog-form-option" value="new">по новизне</option>
+            </select>
+          </fieldset>
+
+          <!-- Радио кнопки -->
+          <fieldset class="catalog-form-group">
+            <legend class="catalog-form-title">Жирность:</legend>
+            <ul class="catalog-form-list">
+              <li class="catalog-form-item">
+                <label class="catalog-form-label">
+                  <input type="radio" class="catalog-form-input" name="fat-content" value="0%">0%
+                </label>
+              </li>
+              <li class="catalog-form-item">
+                <label class="catalog-form-label">
+                  <input type="radio" class="catalog-form-input" name="fat-content" value="to 10%" checked>до 10%
+                </label>
+              </li>
+              <li class="catalog-form-item">
+                <label class="catalog-form-label">
+                  <input type="radio" class="catalog-form-input" name="fat-content" value="to 30%">до 30%
+                </label>
+              </li>
+              <li class="catalog-form-item">
+                <label class="catalog-form-label">
+                  <input type="radio" class="catalog-form-input" name="fat-content" value="over 30%">выше 30%
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Чекбоксы -->
+          <fieldset class="catalog-form-group">
+            <legend class="catalog-form-title">Наполнители:</legend>
+            <ul class="catalog-form-list">
+              <li class="catalog-form-item">
+                <label class="catalog-form-label">
+                  <input type="checkbox" class="catalog-form-input" name="chocolate" checked>шоколадные
+                </label>
+              </li>
+              <li class="catalog-form-item">
+                <label class="catalog-form-label">
+                  <input type="checkbox" class="catalog-form-input" name="sugar sprinkles" checked>сахарные посыпки
+                </label>
+              </li>
+              <li class="catalog-form-item">
+                <label class="catalog-form-label">
+                  <input type="checkbox" class="catalog-form-input" name="fruits">фрукты
+                </label>
+              </li>
+              <li class="catalog-form-item">
+                <label class="catalog-form-label">
+                  <input type="checkbox" class="catalog-form-input" name="syrups">сиропы
+                </label>
+              </li>
+              <li class="catalog-form-item">
+                <label class="catalog-form-label">
+                  <input type="checkbox" class="catalog-form-input" name="jams">джемы
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="btn" type="submit">Применить</button>
+        </form>
+      </section>
+
 
     </main>
 
