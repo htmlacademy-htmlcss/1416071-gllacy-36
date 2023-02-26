@@ -15,30 +15,28 @@
           <img src="#" alt="Логотип магазина мороженого 'Глейси'" class="logo-img">
         </a>
 
-        <ul class="nav-list">
+        <ul class="nav-list reset-list">
           <!-- Выпадающее меню каталога
           ----------------------------- -->
           <li class="nav-item">
-            <select class="nav-select" aria-label="Меню каталога">
-              <option class="nav-option" value="catalog">
                 <a class="nav-link-catalog">Каталог</a>
-              </option>
-              <option class="nav-option" value="new">
-                <a href="#" class="nav-link-catalog">Новинки</a>
-              </option>
-              <option class="nav-option" value="creamy">
-                <a href="#" class="nav-link-catalog">Сливочное</a>
-              </option>
-              <option class="nav-option" value="sherbets">
-                <a href="#" class="nav-link-catalog">Щербеты</a>
-              </option>
-              <option class="nav-option" value="fruit ice">
-                <a href="#" class="nav-link-catalog">Фруктовый лед</a>
-              </option>
-              <option class="nav-option" value="melorin">
-                <a href="#" class="nav-link-catalog">Мелорин</a>
-              </option>
-            </select>
+                <ul class="nav-list-catalog reset-list">
+                  <li class="nav-item-catalog">
+                    <a href="#" class="nav-link-catalog">Новинки</a>
+                  </li>
+                  <li class="nav-item-catalog">
+                    <a href="#" class="nav-link-catalog">Сливочное</a>
+                  </li>
+                  <li class="nav-item-catalog">
+                    <a href="#" class="nav-link-catalog">Щербеты</a>
+                  </li>
+                  <li class="nav-item-catalog">
+                    <a href="#" class="nav-link-catalog">Фруктовый лед</a>
+                  </li>
+                  <li class="nav-item-catalog">
+                    <a href="#" class="nav-link-catalog">Мелорин</a>
+                  </li>
+                </ul>
           </li>
 
           <li class="nav-item">
@@ -49,7 +47,7 @@
           </li>
         </ul>
 
-        <ul class="nav-list nav-user">
+        <ul class="nav-list nav-user reset-list">
           <li class="nav-item">
             <a href="tel:+78005558628" class="nav-link">+7 800 555-86-28</a>
           </li>
@@ -98,17 +96,19 @@
           <!-- Сортировка -->
           <fieldset class="catalog-form-group">
             <legend class="catalog-form-title">Сортировка:</legend>
-            <select class="catalog-form-select" name="sorting" id="sorting">
-              <option class="catalog-form-option" value="popular">по популярности</option>
-              <option class="catalog-form-option" value="price">по стоимости</option>
-              <option class="catalog-form-option" value="new">по новизне</option>
-            </select>
+            <label class="catalog-form-label" for="sorting">
+              <select class="catalog-form-select" name="sorting" id="sorting">
+                <option class="catalog-form-option" value="popular">по популярности</option>
+                <option class="catalog-form-option" value="price">по стоимости</option>
+                <option class="catalog-form-option" value="new">по новизне</option>
+              </select>
+            </label>
           </fieldset>
 
           <!-- Радио кнопки -->
           <fieldset class="catalog-form-group">
             <legend class="catalog-form-title">Жирность:</legend>
-            <ul class="catalog-form-list">
+            <ul class="catalog-form-list reset-list">
               <li class="catalog-form-item">
                 <label class="catalog-form-label">
                   <input type="radio" class="catalog-form-input" name="fat-content" value="0%">0%
@@ -172,7 +172,7 @@
       --------------------- -->
       <section class="product-card">
         <h2 class="visually-hidden">Список мороженого с фильтрами</h2>
-        <ul class="product-list">
+        <ul class="product-list reset-list">
 
           <!-- Первый ряд -->
           <li class="product-item">
@@ -324,7 +324,7 @@
 
         <!-- Пагинация -->
         <button class="btn pagination-more" type="button">Показать еще</button>
-        <ul class="pagination">
+        <ul class="pagination reset-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
               <span class="visually-hidden">Предыдущая страница</span>
@@ -361,7 +361,7 @@
 
       <section class="footer-social">
         <h3 class="visually-hidden">Социальные сети</h3>
-        <ul class="social">
+        <ul class="social reset-list">
           <li class="social-item">
             <a href="https://t.me/htmlacademy" class="social-link">
               <span class="visually-hidden">ссылка на Телеграмм</span>
@@ -382,7 +382,7 @@
 
       <section class="footer-info">
         <h3 class="visually-hidden">Общая информация</h3>
-        <ul class="footer-info-list">
+        <ul class="footer-info-list reset-list">
           <li class="footer-info-item">
             <img class="footer-info-item-img" src="#" alt="сердечко">
             <a href="#" class="footer-info-link">Для поставщиков</a>
