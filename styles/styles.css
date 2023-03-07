@@ -239,5 +239,41 @@ body {
   color: #B9B9B9;
 }
 
+/* delivery */
+
+.delivery {
+  width: 1170px;
+  height: 534px;
+  border-radius: 16px;
+  background: url('../images/delivery-bg.png') no-repeat;
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.delivery-form {
+  padding: 40px;
+  width: 500px;
+  background: #FCFCFC;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.delivery-label {
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.delivery-input {
+  line-height: 20px;
+  color: #B9B9B9;
+}
+
+
 
 
