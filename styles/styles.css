@@ -311,5 +311,31 @@ body {
   line-height: 20px;
 }
 
+/* FOOTER */
+
+.footer-info-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.footer-heart {
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.footer-academy-text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3440;
+}
+
+.footer-academy-link {
+  color: #2D3440;
+  text-decoration: none;
+  border-bottom: 1px solid #2D3440;
+}
+
 
 
