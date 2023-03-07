@@ -338,4 +338,66 @@ body {
 }
 
 
+/*    CATALOG
+----------------- */
+
+/* header-breadcrumbs */
+
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.breadcrumbs-link-current {
+  border-bottom: 1px solid #2D3440;
+}
+
+.header-breadcrumbs-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+/* catalog-filter */
+
+.catalog-form-title,
+.catalog-form-option,
+.catalog-form-span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.btn-pink {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+  padding: 8px 32px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+/* product-card (часть в 'popular-flavors')*/
+
+a.product-item-link {
+  text-decoration: none;
+}
+
+.pagination-current {
+  background: #FCFCFC;
+  border-radius: 50px;
+}
+
+.pagination-link {
+  padding: 2px 8px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
 
