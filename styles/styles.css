@@ -76,6 +76,40 @@ body {
   border-radius: 30px;
 }
 
+/* Hero */
+
+.menu-item{
+  color: #2D3440;
+}
+
+.menu-subtitle {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.menu-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider-button {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 26px;
+}
+
+.bg-btn {
+  background: #FCFCFC;
+  border-radius: 100px;
+  border: none;
+  opacity: 0.3;
+}
+
+.bg-btn-current {
+  opacity: 1;
+  background: #FCFCFC;
+}
 
 
 
