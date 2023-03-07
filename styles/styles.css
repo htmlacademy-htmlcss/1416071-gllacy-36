@@ -132,5 +132,63 @@ body {
   color: #2D3440;
 }
 
+/* popular-flavors */
+
+.flavors-item,
+.product-item {
+  background: #FCFCFC;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.popular-flavors-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.flavors-subtitle,
+.product-title /* catalog.html */ {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.flavors-price,
+.product-price /* catalog.html */ {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.btn-basket {
+  align-items: center;
+  padding: 8px 11px;
+  background: #FF2F64;
+  border-radius: 26px;
+}
+
+/* advantages */
+
+.advantages {
+  background: url("../images/advantages-bg.png") no-repeat;
+  border-radius: 16px;
+}
+
+.advantages-inner {
+  padding: 56px 40px;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.advantages-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
 
 
