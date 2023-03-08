@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -11,45 +12,49 @@
     ----------------------  -->
     <header class="header-index">
       <nav class="nav">
-        <a class="logo">
-          <img class="logo-img" src="images/header-logo.svg" width="137" height="56" alt="Логотип магазина мороженого 'Глейси'">
-        </a>
 
-        <ul class="nav-list reset-list">
-          <!-- Выпадающее меню каталога
-          ----------------------------- -->
-          <li class="nav-item">
-                <a href="catalog.html" class="nav-link-catalog">Каталог</a>
-                <ul class="nav-list-catalog reset-list">
-                  <li class="nav-item-catalog">
-                    <a href="#" class="nav-link-catalog">Новинки</a>
-                  </li>
-                  <li class="nav-item-catalog">
-                    <a href="#" class="nav-link-catalog">Сливочное</a>
-                  </li>
-                  <li class="nav-item-catalog">
-                    <a href="#" class="nav-link-catalog">Щербеты</a>
-                  </li>
-                  <li class="nav-item-catalog">
-                    <a href="#" class="nav-link-catalog">Фруктовый лед</a>
-                  </li>
-                  <li class="nav-item-catalog">
-                    <a href="#" class="nav-link-catalog">Мелорин</a>
-                  </li>
-                </ul>
-          </li>
+        <!-- Меню слева -->
+        <div class="nav-left">
+          <a class="logo">
+            <img class="logo-img" src="images/header-logo.svg" width="137" height="56" alt="Логотип магазина мороженого 'Глейси'">
+          </a>
+          <ul class="nav-list reset-list">
+            <!-- Выпадающее меню каталога
+            ----------------------------- -->
+            <li class="nav-item">
+                  <a href="catalog.html" class="nav-link">Каталог</a>
+                  <ul class="nav-list-catalog reset-list">
+                    <li class="nav-item-catalog">
+                      <a href="#" class="nav-link-catalog nav-link-new">Новинки</a>
+                    </li>
+                    <li class="nav-item-catalog">
+                      <a href="#" class="nav-link-catalog">Сливочное</a>
+                    </li>
+                    <li class="nav-item-catalog">
+                      <a href="#" class="nav-link-catalog">Щербеты</a>
+                    </li>
+                    <li class="nav-item-catalog">
+                      <a href="#" class="nav-link-catalog">Фруктовый лед</a>
+                    </li>
+                    <li class="nav-item-catalog">
+                      <a href="#" class="nav-link-catalog">Мелорин</a>
+                    </li>
+                  </ul>
+            </li>
 
-          <li class="nav-item">
-            <a href="#" class="nav-link">Доставка и оплата</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">О компании</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Доставка и оплата</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">О компании</a>
+            </li>
+          </ul>
+        </div>
 
+        <!-- Меню справа -->
         <ul class="nav-list nav-user reset-list">
           <li class="nav-item">
-            <a href="tel:+78005558628" class="nav-link">+7 800 555-86-28</a>
+            <a href="tel:+78005558628" class="nav-link nav-phone">+7 800 555-86-28</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -126,7 +131,7 @@
         ---------------- -->
         <ul class="bg_color-list reset-list">
           <li class="bg_color-item">
-            <button class="bg-btn">
+            <button class="bg-btn bg-btn-current">
               <span class="visually-hidden">Розовый фон сайта</span>
             </button>
           </li>
@@ -193,7 +198,7 @@
             <h3 class="flavors-subtitle">Малинка</h3>
             <p class="flavors-discription">Сливочное мороженое с малиновым джемом</p>
             <b class="flavors-price">310 ₽/кг</b>
-            <a href="#" class="btn-flavors">
+            <a href="#" class="btn-basket">
               <span class="visually-hidden">Добавить в корзину</span>
             </a>
           </li>
@@ -202,7 +207,7 @@
             <h3 class="flavors-subtitle">Фисташка</h3>
             <p class="flavors-discription">Фисташковый пломбир с кусочками шоколада</p>
             <b class="flavors-price">340 ₽/кг</b>
-            <a href="#" class="btn-flavors">
+            <a href="#" class="btn-basket">
               <span class="visually-hidden">Добавить в корзину</span>
             </a>
           </li>
@@ -211,7 +216,7 @@
             <h3 class="flavors-subtitle">Черника</h3>
             <p class="flavors-discription">Крем-брюле с черничным джемом</p>
             <b class="flavors-price">330 ₽/кг</b>
-            <a href="#" class="btn-flavors">
+            <a href="#" class="btn-basket">
               <span class="visually-hidden">Добавить в корзину</span>
             </a>
           </li>
@@ -220,7 +225,7 @@
             <h3 class="flavors-subtitle">Бабл-гам</h3>
             <p class="flavors-discription">Ванильный пломбир со сладкой посыпкой</p>
             <b class="flavors-price">320 ₽/кг</b>
-            <a href="#" class="btn-flavors">
+            <a href="#" class="btn-basket">
               <span class="visually-hidden">Добавить в корзину</span>
             </a>
           </li>
@@ -230,11 +235,12 @@
       <!-- Преимущества
       ------------------- -->
       <section class="advantages">
-        <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <div class="advantages-inner">
+          <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="advantages-list reset-list">
           <li class="advantages-item">
             <h3 class="visually-hidden">Проверенные технологии</h3>
-            <img src="images/advantages-ice_cream.svg" width="48" height="48" alt="мороженое" class="advantages-img">
+            <img src="images/advantages-ice-cream.svg" width="48" height="48" alt="мороженое" class="advantages-img">
             <p class="advantages-discription">Всё наше мороженое изготавливается на собственном производстве с использованием современного
               оборудования и проверенных временем технологий.</p>
           </li>
@@ -257,29 +263,36 @@
               который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
+        </div>
       </section>
 
       <!--  Новости и подписка
       ------------------------ -->
-      <h2 class="visually-hidden">Новости и подписка</h2>
-      <article class="blog">
-        <span>Новое в нашем блоге</span>
-        <h3 class="blog-title">
-          <a href="#" class="blog-link">10 способов сервировки фруктовых щербетов к столу</a>
-        </h3>
-      </article>
+      <div class="news-blog">
+        <h2 class="visually-hidden">Новости и блог</h2>
 
-      <section class="newsletter">
-        <h3 class="visually-hidden">Подписаться на рассылку</h3>
-        <p class="newsletter-text">Подпишитесь на нашу сладкую рассылку и будьте всегда
-          в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form method="post" action="https://echo.htmlacademy.ru" class="newsletter-form">
-          <label class="newsletter-email">
-            <input class="newsletter-input" type="email" name="newsletter" placeholder="example@mail.ru">
-          </label>
-          <button class="btn btn-red" type="submit">Отправить</button>
-        </form>
-      </section>
+        <article class="blog">
+          <span class="blog-text">Новое в нашем блоге</span>
+          <h3 class="blog-title">
+            <a href="#" class="blog-link">10 способов сервировки фруктовых щербетов к столу</a>
+          </h3>
+        </article>
+
+        <section class="newsletter">
+          <div class="newsletter-inner">
+            <h3 class="visually-hidden">Подписаться на рассылку</h3>
+            <p class="newsletter-text">Подпишитесь на нашу сладкую рассылку и будьте всегда
+            в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form method="post" action="https://echo.htmlacademy.ru" class="newsletter-form">
+              <label class="newsletter-email">
+                <input class="newsletter-input" type="email" name="newsletter" placeholder="example@mail.ru">
+              </label>
+              <button class="btn btn-red" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
+
 
       <!-- Доставка
       ------------- -->
@@ -288,17 +301,18 @@
         <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
            Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
+          <span class="form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</span>
           <p class="delivery-form-date">
-            <label for="delivery-date">Дата</label>
-            <input type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020">
+            <label class="delivery-label" for="delivery-date">Дата</label>
+            <input class="delivery-input" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020">
           </p>
           <p class="delivery-form-phone">
-            <label for="delivery-phone">Телефон</label>
-            <input type="tel" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00">
+            <label class="delivery-label" for="delivery-phone">Телефон</label>
+            <input class="delivery-input" type="tel" name="delivery-phone" id="delivery-phone" placeholder="+7 800 999-00-00">
           </p>
           <p class="delivery-form-address">
-            <label for="delivery-address">Адрес</label>
-            <input type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+            <label class="delivery-label" for="delivery-address">Адрес</label>
+            <input class="delivery-input" type="text" name="delivery-address" id="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
           <button class="btn btn-red" type="submit">Отправить</button>
         </form>
@@ -307,19 +321,21 @@
       <!-- Адрес и телефон
       -------------------- -->
       <section class="contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <address class="contacts-info">
-          <p class="contacts-address">
-            <span class="contacts-address-title">Адрес главного офиса и офлайн-магазина:</span>
-            <b class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
-          </p>
-          <p class="contacts-phone">
-            <span class="contacts-phone-title">Для заказов по телефону:</span>
-            <a href="tel:+78128121212" class="contacts-phone-number">+7 (812) 812-12-12</a>
-            <span class="contacts-phone-text">(с 10 до 20 ежедневно)</span>
-          </p>
-        </address>
-        <a href="#" class="btn btn-red">Форма обратной связи</a>
+        <div class="contacts-inner">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <address class="contacts-info">
+            <p class="contacts-address">
+              <span class="contacts-address-title">Адрес главного офиса и офлайн-магазина:</span>
+              <b class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</b>
+            </p>
+            <p class="contacts-phone">
+              <span class="contacts-phone-title">Для заказов по телефону:</span>
+              <a href="tel:+78128121212" class="contacts-phone-number">+7 (812) 812-12-12</a>
+              <span class="contacts-phone-text">(с 10 до 20 ежедневно)</span>
+            </p>
+          </address>
+          <a href="#" class="btn btn-red">Форма обратной связи</a>
+        </div>
       </section>
 
     </main>
@@ -355,7 +371,7 @@
         <ul class="footer-info-list reset-list">
           <li class="footer-info-item">
             <img class="footer-info-item-img" src="images/footer-heart.svg" width="14" height="13" alt="сердечко">
-            <a href="#" class="footer-info-link">Для поставщиков</a>
+            <a href="#" class="footer-info-link footer-heart">Для поставщиков</a>
           </li>
           <li class="footer-info-item">
             <a href="#" class="footer-info-link">Наши документы</a>
