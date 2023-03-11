@@ -600,11 +600,33 @@ body {
 
 /* FOOTER */
 
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0;
+}
+
+.footer-info-list {
+  display: flex;
+  width: 356px;
+  flex-wrap: wrap;
+}
+
+.footer-info-img {
+  display: block;
+  margin: 4px 8px 0px 0px;
+}
+
+.footer-info-left {
+  margin-right: 24px;
+}
+
 .footer-info-link {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
+  margin-bottom: 8px;
 }
 
 .footer-heart {
