@@ -217,6 +217,10 @@ body {
 
 /* promotions */
 
+.promotions {
+  margin-bottom: 80px;
+}
+
 .promotions-title {
   font-weight: 900;
   font-size: 32px;
@@ -258,17 +262,55 @@ body {
 
 /* popular-flavors */
 
-.flavors-item,
-.product-item {
-  background: #FCFCFC;
-  border-radius: 8px;
-  text-align: center;
+.popular-flavors {
+  margin-bottom: 80px;
 }
 
 .popular-flavors-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  color: #2D3440;
+  text-align: center;
+
+  width: 527px;
+  margin: 0 auto 106px;
+}
+
+.flavors-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 -15px;
+}
+
+.flavors-item,
+.product-item {
+  background: #FCFCFC;
+  border-radius: 8px;
+  text-align: center;
+
+  width: 270px;
+  height: 281px;
+  margin: 0 15px;
+}
+
+.flavors-img {
+  margin: -50px 0 16px;
+  border-radius: 50%;
+}
+
+.flavors-content {
+  padding: 0 40px 24px;
+}
+
+.flavors-text {
+  margin-bottom: 16px;
+}
+
+.flavors-end {
+  display: flex;
+  justify-content: space-between;
 }
 
 .flavors-subtitle,
