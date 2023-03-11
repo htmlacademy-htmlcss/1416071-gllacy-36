@@ -510,6 +510,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   color: #2D3440;
+  display: block;
 }
 
 .delivery-input {
@@ -539,6 +540,7 @@ body {
   height: 492px;
   border-radius: 16px;
   background: url('../images/contacts-bg.png') no-repeat;
+  padding: 64px;
 }
 
 .contacts-inner {
@@ -550,11 +552,35 @@ body {
   border-radius: 8px;
 }
 
+.contacts-info {
+  font-style: normal;
+}
+
+.contacts-address {
+  margin-bottom: 24px;
+}
+
+.contacts-address-title {
+  display: block;
+  width: 179px;
+  margin-bottom: 12px;
+}
+
 .contacts-address-text {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
+  margin-bottom: 24px;
+}
+
+.contacts-phone {
+  margin-bottom: 32px;
+}
+
+.contacts-phone-title {
+  display: block;
+  margin-bottom: 12px;
 }
 
 .contacts-phone-number {
@@ -562,6 +588,9 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
+  margin-top: 12px;
+  text-decoration: none;
+  display: block;
 }
 
 .contacts-phone-text {
