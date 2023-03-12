@@ -87,6 +87,17 @@ body {
   border: 4px solid rgba(255, 47, 100, 0.3);
 }
 
+.btn-pink {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+  padding: 8px 32px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
 /* Container */
 
 .container {
@@ -97,7 +108,14 @@ body {
 /* visually-hidden */
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -123,12 +141,20 @@ body {
   align-items: center;
 }
 
+.nav-list {
+  flex-wrap: wrap;
+}
+
 .logo {
   margin-right: 16px;
 }
 
 .nav-item {
   padding: 8px 16px;
+  min-width: 32px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link, .nav-link-catalog {
@@ -209,6 +235,10 @@ body {
   border-radius: 100px;
   border: none;
   opacity: 0.3;
+
+  min-width: 12px;
+  min-height: 12px;
+  margin: 0 4px;
 }
 
 .bg-btn-current {
@@ -223,10 +253,18 @@ body {
 
 .bg_color-list {
   display: flex;
+  margin: -4px;
 }
 
 .social {
   display: flex;
+  margin: -8px;
+}
+
+.social-item {
+  min-width: 24px;
+  min-height: 24px;
+  margin: 0 8px;
 }
 
 /* promotions */
@@ -291,6 +329,10 @@ body {
   margin: 0 auto 106px;
 }
 
+.flavors-subtitle {
+  margin-bottom: 8px;
+}
+
 .flavors-list,
 .product-list {
   display: flex;
@@ -312,7 +354,7 @@ body {
 
 .flavors-img,
 .product-img {
-  margin: -50px 0 16px;
+  margin: -60px 0 16px;
   border-radius: 50%;
 }
 
@@ -327,6 +369,7 @@ body {
 .flavors-end {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .flavors-subtitle,
@@ -350,6 +393,9 @@ body {
   padding: 8px 11px;
   background: #FF2F64;
   border-radius: 26px;
+  min-width: 32px;
+  min-height: 32px;
+  border: 0;
 }
 
 /* advantages */
@@ -636,6 +682,10 @@ body {
   color: #2D3440;
 }
 
+.footer-academy-logo {
+  margin-bottom: 10px;
+}
+
 .footer-academy-text {
   font-size: 12px;
   line-height: 16px;
@@ -653,6 +703,10 @@ body {
 ----------------- */
 
 /* header-breadcrumbs */
+
+.header-breadcrumbs {
+  margin-bottom: 40px;
+}
 
 .breadcrumbs-list {
   display: flex;
@@ -701,11 +755,12 @@ body {
 
 .catalog-form-group {
   border: 0;
-}
-
-.catalog-form-group {
   margin: 0 12px;
   padding: 0;
+}
+
+.catalog-form-title {
+  margin-bottom: 8px;
 }
 
 .catalog-form :first-child {
@@ -718,25 +773,28 @@ body {
   flex-wrap: wrap;
 }
 
-.btn-pink {
-  background: rgba(252, 252, 252, 0.3);
-  border: 2px solid #FCFCFC;
-  border-radius: 20px;
-  padding: 8px 32px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  color: #2D3440;
-}
-
 /* product-card (часть в 'popular-flavors')*/
 
 .product-item {
   margin-bottom: 90px;
 }
 
+.product-content {
+  padding: 0 40px 24px;
+}
+
 a.product-item-link {
   text-decoration: none;
+}
+
+.product-title {
+  margin-bottom: 8px;
+  color: #2D3440;
+}
+
+.product-description {
+  margin-bottom: 16px;
+  color: #565C66;
 }
 
 .pagination-current {
@@ -753,8 +811,18 @@ a.product-item-link {
 /* pagination */
 
 .pagination {
+  border-bottom: 1px solid rgba(252, 252, 252, 0.3);
+}
+
+.pagination-inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.pagination-list {
+  display: flex;
 }
 
 .pagination-hidden {
