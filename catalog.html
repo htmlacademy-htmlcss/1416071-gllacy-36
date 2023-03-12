@@ -11,46 +11,51 @@
     <!--      HEADER
     ----------------------  -->
     <header class="header-catalog">
-      <nav class="nav">
-        <a href="index.html" class="logo">
-          <img src="images/header-logo.svg" alt="Логотип магазина мороженого 'Глейси'" class="logo-img">
-        </a>
+      <nav class="nav container">
 
-        <ul class="nav-list reset-list">
-          <!-- Выпадающее меню каталога
-          ----------------------------- -->
-          <li class="nav-item">
-                <a class="nav-link-catalog">Каталог</a>
-                <ul class="nav-list-catalog reset-list">
-                  <li class="nav-item-catalog">
-                    <a href="#" class="nav-link-catalog">Новинки</a>
-                  </li>
-                  <li class="nav-item-catalog">
-                    <a href="#" class="nav-link-catalog">Сливочное</a>
-                  </li>
-                  <li class="nav-item-catalog">
-                    <a href="#" class="nav-link-catalog">Щербеты</a>
-                  </li>
-                  <li class="nav-item-catalog">
-                    <a href="#" class="nav-link-catalog">Фруктовый лед</a>
-                  </li>
-                  <li class="nav-item-catalog">
-                    <a href="#" class="nav-link-catalog">Мелорин</a>
-                  </li>
-                </ul>
-          </li>
+        <!-- Меню слева -->
 
-          <li class="nav-item">
-            <a href="#" class="nav-link">Доставка и оплата</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">О компании</a>
-          </li>
-        </ul>
+        <div class="nav-left">
+          <a href="index.html" class="logo">
+            <img src="images/header-logo.svg" alt="Логотип магазина мороженого 'Глейси'" class="logo-img">
+          </a>
+          <ul class="nav-list reset-list">
+            <!-- Выпадающее меню каталога
+            ----------------------------- -->
+            <li class="nav-item">
+                  <a class="nav-link">Каталог</a>
+                  <ul class="nav-list-catalog reset-list">
+                    <li class="nav-item-catalog">
+                      <a href="#" class="nav-link-catalog nav-link-new">Новинки</a>
+                    </li>
+                    <li class="nav-item-catalog">
+                      <a href="#" class="nav-link-catalog">Сливочное</a>
+                    </li>
+                    <li class="nav-item-catalog">
+                      <a href="#" class="nav-link-catalog">Щербеты</a>
+                    </li>
+                    <li class="nav-item-catalog">
+                      <a href="#" class="nav-link-catalog">Фруктовый лед</a>
+                    </li>
+                    <li class="nav-item-catalog">
+                      <a href="#" class="nav-link-catalog">Мелорин</a>
+                    </li>
+                  </ul>
+            </li>
 
+            <li class="nav-item">
+              <a href="#" class="nav-link">Доставка и оплата</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">О компании</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Меню справа -->
         <ul class="nav-list nav-user reset-list">
           <li class="nav-item">
-            <a href="tel:+78005558628" class="nav-link">+7 800 555-86-28</a>
+            <a href="tel:+78005558628" class="nav-link nav-phone">+7 800 555-86-28</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -70,10 +75,10 @@
 
     <!-- Основное содержимое главной страницы
     ----------------------------------------- -->
-    <main class="main-catalog">
+    <main class="main-catalog main-container container">
 
       <header class="header-breadcrumbs">
-        <ol class="breadcrumbs-list">
+        <ol class="breadcrumbs-list reset-list">
           <li class="breadcrumbs-item">
             <a href="index.html" class="breadcrumbs-link">Главная</a>
           </li>
@@ -98,7 +103,7 @@
           <fieldset class="catalog-form-group">
             <legend class="catalog-form-title">Сортировка:</legend>
             <label class="catalog-form-label" for="sorting">
-              <select class="catalog-form-select" name="sorting" id="sorting">
+              <select class="catalog-form-select catalof-form-bg" name="sorting" id="sorting">
                 <option class="catalog-form-option" value="popular">по популярности</option>
                 <option class="catalog-form-option" value="price">по стоимости</option>
                 <option class="catalog-form-option" value="new">по новизне</option>
@@ -109,7 +114,7 @@
           <!-- Радио кнопки -->
           <fieldset class="catalog-form-group">
             <legend class="catalog-form-title">Жирность:</legend>
-            <ul class="catalog-form-list reset-list">
+            <ul class="catalog-form-list reset-list catalof-form-bg">
               <li class="catalog-form-item">
                 <label class="catalog-form-label">
                   <input type="radio" class="catalog-form-input" name="fat-content" value="0%">
@@ -140,7 +145,7 @@
           <!-- Чекбоксы -->
           <fieldset class="catalog-form-group">
             <legend class="catalog-form-title">Наполнители:</legend>
-            <ul class="catalog-form-list">
+            <ul class="catalog-form-list reset-list catalof-form-bg">
               <li class="catalog-form-item">
                 <label class="catalog-form-label">
                   <input type="checkbox" class="catalog-form-input" name="chocolate" checked>
@@ -182,7 +187,7 @@
       --------------------- -->
       <section class="product-card">
         <h2 class="visually-hidden">Список мороженого с фильтрами</h2>
-        <ul class="product-list reset-list">
+        <ul class="product-list flavors-list reset-list">
 
           <!-- Первый ряд -->
           <li class="product-item">
@@ -333,34 +338,37 @@
         </ul>
 
         <!-- Пагинация -->
-        <button class="btn pagination-more" type="button">Показать еще</button>
-        <ul class="pagination reset-list">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
-          </li>
-        </ul>
+        <div class="pagination">
+          <div class="pagination-hidden"></div>
+          <button class="btn pagination-more" type="button">Показать еще</button>
+          <ul class="pagination reset-list">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">5</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
@@ -369,57 +377,60 @@
     <footer class="footer-index">
       <h2 class="visually-hidden">Подвал сайта</h2>
 
-      <section class="footer-social">
-        <h3 class="visually-hidden">Социальные сети</h3>
-        <ul class="social reset-list">
-          <li class="social-item">
-            <a href="https://t.me/htmlacademy" class="social-link">
-              <span class="visually-hidden">ссылка на Телеграмм</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://vk.com/htmlacademy" class="social-link">
-              <span class="visually-hidden">ссылка на Вконтакте</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
-              <span class="visually-hidden">ссылка на Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <div class="footer-inner container">
+        <section class="footer-social">
+          <h3 class="visually-hidden">Социальные сети</h3>
+          <ul class="social reset-list">
+            <li class="social-item">
+              <a href="https://t.me/htmlacademy" class="social-link">
+                <span class="visually-hidden">ссылка на Телеграмм</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://vk.com/htmlacademy" class="social-link">
+                <span class="visually-hidden">ссылка на Вконтакте</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
+                <span class="visually-hidden">ссылка на Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="footer-info">
-        <h3 class="visually-hidden">Общая информация</h3>
-        <ul class="footer-info-list reset-list">
-          <li class="footer-info-item">
-            <img class="footer-info-item-img" src="images/footer-heart.svg" width="14" height="13" alt="сердечко">
-            <a href="#" class="footer-info-link">Для поставщиков</a>
-          </li>
-          <li class="footer-info-item">
-            <a href="#" class="footer-info-link">Наши документы</a>
-          </li>
-          <li class="footer-info-item">
-            <a href="#" class="footer-info-link">О производстве</a>
-          </li>
-          <li class="footer-info-item">
-            <a href="#" class="footer-info-link">Экологические стандарты</a>
-          </li>
-        </ul>
-      </section>
+        <section class="footer-info">
+          <h3 class="visually-hidden">Общая информация</h3>
+          <ul class="footer-info-list reset-list">
+            <img class="footer-info-img" src="images/footer-heart.svg" width="14" height="13" alt="сердечко">
+            <div class="footer-info-left">
+              <li class="footer-info-item">
+                <a href="#" class="footer-info-link footer-heart">Для поставщиков</a>
+              </li>
+              <li class="footer-info-item">
+                <a href="#" class="footer-info-link">О производстве</a>
+              </li>
+            </div>
+            <footer-info-right>
+              <li class="footer-info-item">
+                <a href="#" class="footer-info-link">Наши документы</a>
+              </li>
+              <li class="footer-info-item">
+                <a href="#" class="footer-info-link">Экологические стандарты</a>
+              </li>
+            </footer-info-right>
+          </ul>
+        </section>
 
-      <section class="footer-academy">
-        <h3 class="visually-hidden">HTML-Академия</h3>
-        <img class="footer-academy-logo" src="images/footer-logo-htmlacademy.svg" width="93" height="27" alt="logo html academy" >
-        <p class="footer-academy-text">
-          <span>Сделано в</span>
-          <a href="https://htmlacademy.ru/" class="footer-academy-link">.htmlacademy</a>
-          <span>© 2021</span>
-        </p>
-      </section>
+        <section class="footer-academy">
+          <h3 class="visually-hidden">HTML-Академия</h3>
+          <img src="images/footer-logo-htmlacademy.svg" width="93" height="27" alt="Логотип 'HTML-Академии'" class="footer-academy-logo">
+          <p class="footer-academy-text">
+            <span>Сделано в</span>
+            <a href="https://htmlacademy.ru/" class="footer-academy-link">.htmlacademy</a>
+            <span>© 2021</span>
+          </p>
+        </section>
+      </div>
 
     </footer>
-
-  </body>
-</html>
