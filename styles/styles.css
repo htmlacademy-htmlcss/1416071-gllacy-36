@@ -284,8 +284,9 @@ body {
 }
 
 .promotions-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  gap: 30px;
 }
 
 .promotions-item {
@@ -335,10 +336,10 @@ body {
 
 .flavors-list,
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin: 0 -15px;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
+  margin-bottom: 16px;
 }
 
 .flavors-item,
@@ -349,7 +350,6 @@ body {
 
   width: 270px;
   height: 281px;
-  margin: 0 15px;
 }
 
 .flavors-img,
@@ -569,7 +569,7 @@ body {
 
 .delivery-input-date {
   width: 117px;
-  margin-right: 16px;
+  margin: 0 16px 20px 0;
 }
 
 .delivery-input-phone {
@@ -578,7 +578,7 @@ body {
 
 .delivery-input-address {
   width: 420px;
-  margin: 20px 0 32px;
+  margin-bottom: 32px;
 }
 
 /* contacts */
