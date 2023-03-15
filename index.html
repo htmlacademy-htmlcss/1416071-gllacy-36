@@ -57,15 +57,28 @@
             <a href="tel:+78005558628" class="nav-link nav-phone">+7 800 555-86-28</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link nav-link-search">
+              <svg class="nav-icon-search" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
+                <path fill="#2D3440" fill-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" clip-rule="evenodd"/>
+              </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Вход</a>
+            <a href="#" class="nav-link nav-link-user">
+              <svg class="nav-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none">
+                <path fill="#2D3440" fill-rule="evenodd" d="M8 1.5246A.6667.6667 0 0 1 8.6667.858h2.6666a1.9997 1.9997 0 0 1 2 2v9.3334a2 2 0 0 1-2 2H8.6667a.6667.6667 0 0 1 0-1.3334h2.6666A.6667.6667 0 0 0 12 12.1913V2.8579a.6664.6664 0 0 0-.6667-.6666H8.6667A.6667.6667 0 0 1 8 1.5246ZM4.8619 3.72a.6667.6667 0 0 1 .9428 0l3.3291 3.329a.6731.6731 0 0 1 .129.177.664.664 0 0 1 .0705.2987.6639.6639 0 0 1-.1998.4759l-3.3288 3.3288a.6667.6667 0 1 1-.9428-.9428L7.057 8.1913H.6668a.6667.6667 0 1 1 0-1.3334H7.057L4.862 4.6627a.6667.6667 0 0 1 0-.9428Z" clip-rule="evenodd"/>
+              </svg>
+              Вход
+            </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">2 товара</a>
+            <a href="#" class="nav-link nav-link-user">
+              <svg class="nav-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
+                <path fill="#2D3440" fill-rule="evenodd" d="M1.1667.108a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.053l.9674 4.8334.0001.0006a1.8256 1.8256 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7916H4.6107L4.1381.6438a.6667.6667 0 0 0-.6537-.5359H1.1667ZM5.691 8.4023l-.8134-4.064h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3943v-.0002H6.1962l-.0128.0002a.4922.4922 0 0 1-.4922-.3963l-.0002-.001Zm-1.1336 3.961c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Zm6.3733 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z" clip-rule="evenodd"/>
+              </svg>
+              2 товара
+            </a>
           </li>
         </ul>
 
@@ -93,13 +106,33 @@
               </form>
             </div>
             <div class="menu-right">
-              <img class="slider-image-big" src="images/big-ice-cream-1.png" width="328" height="507" alt="Клубничное.">
-              <img class="slider-image" src="images/ice-cream-2.png" width="66" height="150" alt="Сливочное.">
-              <img class="slider-image" src="images/ice-cream-3.png" width="66" height="150" alt="Карамельное.">
+              <ul class="slider-image-list reset-list">
+                <li class="slider-image-item-big">
+                  <img class="slider-image-big" src="images/big-ice-cream-1.png" width="328" height="507" alt="Клубничное.">
+                  <button class="slider-button slider-prev" type="button">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71044 13.1352C9.97014 13.3949 10.3912 13.3949 10.6509 13.1352C10.9106 12.8755 10.9106 12.4545 10.6509 12.1948L6.44961 7.99351L10.6509 3.79219C10.9106 3.53249 10.9106 3.11144 10.6509 2.85174C10.3912 2.59204 9.97017 2.59204 9.71048 2.85174L5.04176 7.52045C5.04081 7.52139 5.03987 7.52233 5.03892 7.52328C4.77922 7.78298 4.77922 8.20403 5.03892 8.46373L9.71044 13.1352Z" fill="#FCFCFC"/>
+                    </svg>
+                    <span class="visually-hidden">Предыдущее мороженое</span>
+                  </button>
+                  <button class="slider-button slider-next" type="button">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.28956 2.86476C7.02986 2.60506 6.60881 2.60506 6.34911 2.86476C6.08941 3.12446 6.08941 3.54551 6.34911 3.80521L10.5504 8.00649L6.34907 12.2078C6.08937 12.4675 6.08937 12.8886 6.34907 13.1483C6.60877 13.408 7.02982 13.408 7.28952 13.1483L11.9582 8.47955C11.9592 8.47861 11.9601 8.47767 11.9611 8.47672C12.2208 8.21702 12.2208 7.79597 11.9611 7.53627L7.28956 2.86476Z" fill="#FCFCFC"/>
+                    </svg>
+                    <span class="visually-hidden">Следующее мороженое</span>
+                  </button>
+                </li>
+                <li class="slider-image-item">
+                  <img class="slider-image" src="images/ice-cream-2.png" width="66" height="150" alt="Сливочное.">
+                </li>
+                <li class="slider-image-item">
+                  <img class="slider-image" src="images/ice-cream-3.png" width="66" height="150" alt="Карамельное.">
+                </li>
+              </ul>
             </div>
           </li>
 
-          <li class="menu-item">
+          <li class="menu-item menu-item-hidden">
             <div class="menu-left">
               <h3 class="menu-subtitle">Сливочное мороженое со вкусом банана</h3>
               <p class="menu-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
@@ -109,13 +142,33 @@
               </form>
             </div>
             <div class="menu-right">
-              <img class="slider-image-big" src="images/big-ice-cream-2.png" width="328" height="507" alt="Сливочное.">
-              <img class="slider-image" src="images/ice-cream-3.png" width="66" height="150" alt="Карамельное.">
-              <img class="slider-image" src="images/ice-cream-1.png" width="66" height="150" alt="Клубничное.">
+              <ul class="slider-image-list reset-list">
+                <li class="slider-image-item-big">
+                  <img class="slider-image-big" src="images/big-ice-cream-2.png" width="328" height="507" alt="Сливочное.">
+                  <button class="slider-button slider-prev" type="button">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71044 13.1352C9.97014 13.3949 10.3912 13.3949 10.6509 13.1352C10.9106 12.8755 10.9106 12.4545 10.6509 12.1948L6.44961 7.99351L10.6509 3.79219C10.9106 3.53249 10.9106 3.11144 10.6509 2.85174C10.3912 2.59204 9.97017 2.59204 9.71048 2.85174L5.04176 7.52045C5.04081 7.52139 5.03987 7.52233 5.03892 7.52328C4.77922 7.78298 4.77922 8.20403 5.03892 8.46373L9.71044 13.1352Z" fill="#FCFCFC"/>
+                    </svg>
+                    <span class="visually-hidden">Предыдущее мороженое</span>
+                  </button>
+                  <button class="slider-button slider-next" type="button">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.28956 2.86476C7.02986 2.60506 6.60881 2.60506 6.34911 2.86476C6.08941 3.12446 6.08941 3.54551 6.34911 3.80521L10.5504 8.00649L6.34907 12.2078C6.08937 12.4675 6.08937 12.8886 6.34907 13.1483C6.60877 13.408 7.02982 13.408 7.28952 13.1483L11.9582 8.47955C11.9592 8.47861 11.9601 8.47767 11.9611 8.47672C12.2208 8.21702 12.2208 7.79597 11.9611 7.53627L7.28956 2.86476Z" fill="#FCFCFC"/>
+                    </svg>
+                    <span class="visually-hidden">Следующее мороженое</span>
+                  </button>
+                </li>
+                <li class="slider-image-item">
+                  <img class="slider-image" src="images/ice-cream-3.png" width="66" height="150" alt="Карамельное.">
+                </li>
+                <li class="slider-image-item">
+                  <img class="slider-image" src="images/ice-cream-1.png" width="66" height="150" alt="Клубничное.">
+                </li>
+              </ul>
             </div>
           </li>
 
-          <li class="menu-item">
+          <li class="menu-item menu-item-hidden">
             <div class="menu-left">
               <h3 class="menu-subtitle">Карамельный пломбир с маршмеллоу</h3>
               <p class="menu-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира
@@ -125,19 +178,33 @@
               </form>
             </div>
             <div class="menu-right">
-              <img class="slider-image-big" src="images/big-ice-cream-3.png" width="328" height="507" alt="Карамельное.">
-              <img class="slider-image" src="images/ice-cream-1.png" width="66" height="150" alt="Клубничное.">
-              <img class="slider-image" src="images/ice-cream-2.png" width="66" height="150" alt="Сливочное.">
+              <ul class="slider-image-list reset-list">
+                <li class="slider-image-item-big">
+                  <img class="slider-image-big" src="images/big-ice-cream-3.png" width="328" height="507" alt="Карамельное.">
+                  <button class="slider-button slider-prev" type="button">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71044 13.1352C9.97014 13.3949 10.3912 13.3949 10.6509 13.1352C10.9106 12.8755 10.9106 12.4545 10.6509 12.1948L6.44961 7.99351L10.6509 3.79219C10.9106 3.53249 10.9106 3.11144 10.6509 2.85174C10.3912 2.59204 9.97017 2.59204 9.71048 2.85174L5.04176 7.52045C5.04081 7.52139 5.03987 7.52233 5.03892 7.52328C4.77922 7.78298 4.77922 8.20403 5.03892 8.46373L9.71044 13.1352Z" fill="#FCFCFC"/>
+                    </svg>
+                    <span class="visually-hidden">Предыдущее мороженое</span>
+                  </button>
+                  <button class="slider-button slider-next" type="button">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.28956 2.86476C7.02986 2.60506 6.60881 2.60506 6.34911 2.86476C6.08941 3.12446 6.08941 3.54551 6.34911 3.80521L10.5504 8.00649L6.34907 12.2078C6.08937 12.4675 6.08937 12.8886 6.34907 13.1483C6.60877 13.408 7.02982 13.408 7.28952 13.1483L11.9582 8.47955C11.9592 8.47861 11.9601 8.47767 11.9611 8.47672C12.2208 8.21702 12.2208 7.79597 11.9611 7.53627L7.28956 2.86476Z" fill="#FCFCFC"/>
+                    </svg>
+                    <span class="visually-hidden">Следующее мороженое</span>
+                  </button>
+                </li>
+                <li class="slider-image-item">
+                  <img class="slider-image" src="images/ice-cream-1.png" width="66" height="150" alt="Клубничное.">
+                </li>
+                <li class="slider-image-item">
+                  <img class="slider-image" src="images/ice-cream-2.png" width="66" height="150" alt="Сливочное.">
+                </li>
+              </ul>
             </div>
           </li>
 
         </ul>
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее мороженое</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее мороженое</span>
-        </button>
 
         <div class="hero-end">
           <!-- Кнопки фона
@@ -165,16 +232,25 @@
           <ul class="social reset-list">
             <li class="social-item">
               <a href="https://t.me/htmlacademy" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+                  <path fill="#FCFCFC" fill-rule="evenodd" d="M26 14c0 6.627-5.373 12-12 12S2 20.627 2 14 7.373 2 14 2s12 5.373 12 12Zm-11.57-3.141c-1.167.485-3.5 1.49-6.998 3.014-.568.226-.866.447-.893.663-.046.366.412.51 1.034.705.085.027.173.054.263.084.613.199 1.437.432 1.865.441.389.008.823-.152 1.302-.48 3.268-2.207 4.955-3.322 5.061-3.346.075-.017.179-.039.249.024.07.062.063.18.056.212-.046.193-1.84 1.862-2.77 2.726-.29.269-.495.46-.537.504-.094.097-.19.19-.282.279-.57.548-.996.96.024 1.632.49.323.882.59 1.273.856.427.291.853.581 1.405.943.14.092.274.187.405.28.497.355.944.673 1.496.623.32-.03.652-.331.82-1.23.397-2.126 1.179-6.73 1.36-8.628a2.112 2.112 0 0 0-.02-.472.506.506 0 0 0-.172-.325c-.143-.117-.365-.142-.465-.14-.451.008-1.143.249-4.476 1.635Z" clip-rule="evenodd"/><rect width="26" height="26" x="1" y="1" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2" rx="13"/>
+                </svg>
                 <span class="visually-hidden">ссылка на Телеграмм</span>
               </a>
             </li>
             <li class="social-item">
               <a href="https://vk.com/htmlacademy" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+                  <path fill="#FCFCFC" fill-rule="evenodd" d="M26 14c0 6.627-5.373 12-12 12S2 20.627 2 14 7.373 2 14 2s12 5.373 12 12Zm-11.412 2.975h-.717s-1.582.083-2.976-1.188c-1.52-1.388-2.863-4.14-2.863-4.14s-.077-.18.007-.268c.095-.098.352-.104.352-.104l1.715-.01s.161.024.277.098a.476.476 0 0 1 .149.176s.277.615.644 1.17c.716 1.085 1.05 1.322 1.293 1.206.354-.17.248-1.533.248-1.533s.007-.495-.178-.716c-.143-.17-.414-.22-.533-.235-.096-.011.062-.207.267-.295.309-.133.854-.14 1.498-.135.501.005.645.032.842.074.455.096.44.405.41 1.07-.01.2-.02.43-.02.697 0 .06-.002.124-.004.19-.01.34-.023.73.233.876.132.074.453.011 1.256-1.185.381-.566.667-1.233.667-1.233s.062-.119.16-.17c.098-.052.232-.036.232-.036l1.805-.01s.542-.056.63.158c.091.226-.203.751-.94 1.612-.696.813-1.036 1.115-1.01 1.38.02.196.242.372.67.72.888.722 1.124 1.101 1.18 1.192a.447.447 0 0 0 .011.016c.398.578-.44.623-.44.623l-1.603.02s-.345.06-.798-.214c-.237-.142-.469-.375-.69-.597-.337-.339-.649-.652-.915-.578-.447.124-.433.967-.433.967s.004.18-.098.276c-.11.105-.328.126-.328.126Z" clip-rule="evenodd"/><rect width="26" height="26" x="1" y="1" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2" rx="13"/>
+                </svg>
                 <span class="visually-hidden">ссылка на Вконтакте</span>
               </a>
             </li>
             <li class="social-item">
               <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+                  <path fill="#FCFCFC" d="m16.004 13.791-2.808-1.31c-.245-.114-.446.014-.446.285v2.468c0 .271.201.399.446.285l2.807-1.31c.246-.115.246-.303 0-.418ZM14 2C7.372 2 2 7.372 2 14s5.372 12 12 12 12-5.372 12-12S20.628 2 14 2Zm0 16.875c-6.143 0-6.25-.554-6.25-4.875S7.857 9.125 14 9.125c6.142 0 6.25.554 6.25 4.875s-.108 4.875-6.25 4.875Z"/><rect width="26" height="26" x="1" y="1" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2" rx="13"/>
+                </svg>
                 <span class="visually-hidden">ссылка на Ютуб</span>
               </a>
             </li>
@@ -227,6 +303,9 @@
                 <b class="flavors-price">310 ₽/кг</b>
                 <a href="#" class="btn-basket">
                   <span class="visually-hidden">Добавить в корзину</span>
+                  <svg class="flavors-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
+                    <path fill="#fff" fill-rule="evenodd" d="M1.1667.108a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.053l.9674 4.8334.0001.0006a1.8256 1.8256 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7916H4.6107L4.1381.6438a.6667.6667 0 0 0-.6537-.5359H1.1667ZM5.691 8.4023l-.8134-4.064h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3943v-.0002H6.1962l-.0128.0002a.4922.4922 0 0 1-.4922-.3963l-.0002-.001Zm-1.1336 3.961c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Zm6.3733 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z" clip-rule="evenodd"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -242,6 +321,9 @@
                 <b class="flavors-price">340 ₽/кг</b>
                 <a href="#" class="btn-basket">
                   <span class="visually-hidden">Добавить в корзину</span>
+                  <svg class="flavors-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
+                    <path fill="#fff" fill-rule="evenodd" d="M1.1667.108a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.053l.9674 4.8334.0001.0006a1.8256 1.8256 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7916H4.6107L4.1381.6438a.6667.6667 0 0 0-.6537-.5359H1.1667ZM5.691 8.4023l-.8134-4.064h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3943v-.0002H6.1962l-.0128.0002a.4922.4922 0 0 1-.4922-.3963l-.0002-.001Zm-1.1336 3.961c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Zm6.3733 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z" clip-rule="evenodd"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -257,6 +339,9 @@
                 <b class="flavors-price">330 ₽/кг</b>
                 <a href="#" class="btn-basket">
                   <span class="visually-hidden">Добавить в корзину</span>
+                  <svg class="flavors-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
+                    <path fill="#fff" fill-rule="evenodd" d="M1.1667.108a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.053l.9674 4.8334.0001.0006a1.8256 1.8256 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7916H4.6107L4.1381.6438a.6667.6667 0 0 0-.6537-.5359H1.1667ZM5.691 8.4023l-.8134-4.064h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3943v-.0002H6.1962l-.0128.0002a.4922.4922 0 0 1-.4922-.3963l-.0002-.001Zm-1.1336 3.961c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Zm6.3733 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z" clip-rule="evenodd"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -272,6 +357,9 @@
                 <b class="flavors-price">320 ₽/кг</b>
                 <a href="#" class="btn-basket">
                   <span class="visually-hidden">Добавить в корзину</span>
+                  <svg class="flavors-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
+                    <path fill="#fff" fill-rule="evenodd" d="M1.1667.108a.6667.6667 0 1 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.053l.9674 4.8334.0001.0006a1.8256 1.8256 0 0 0 1.8183 1.4691h5.6207a1.8258 1.8258 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7916H4.6107L4.1381.6438a.6667.6667 0 0 0-.6537-.5359H1.1667ZM5.691 8.4023l-.8134-4.064h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3943v-.0002H6.1962l-.0128.0002a.4922.4922 0 0 1-.4922-.3963l-.0002-.001Zm-1.1336 3.961c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Zm6.3733 0c0-.688.5577-1.2457 1.2457-1.2457.688 0 1.2457.5577 1.2457 1.2457 0 .6879-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5578-1.2457-1.2457Z" clip-rule="evenodd"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -404,16 +492,25 @@
           <ul class="social reset-list">
             <li class="social-item">
               <a href="https://t.me/htmlacademy" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+                  <path fill="#FCFCFC" fill-rule="evenodd" d="M26 14c0 6.627-5.373 12-12 12S2 20.627 2 14 7.373 2 14 2s12 5.373 12 12Zm-11.57-3.141c-1.167.485-3.5 1.49-6.998 3.014-.568.226-.866.447-.893.663-.046.366.412.51 1.034.705.085.027.173.054.263.084.613.199 1.437.432 1.865.441.389.008.823-.152 1.302-.48 3.268-2.207 4.955-3.322 5.061-3.346.075-.017.179-.039.249.024.07.062.063.18.056.212-.046.193-1.84 1.862-2.77 2.726-.29.269-.495.46-.537.504-.094.097-.19.19-.282.279-.57.548-.996.96.024 1.632.49.323.882.59 1.273.856.427.291.853.581 1.405.943.14.092.274.187.405.28.497.355.944.673 1.496.623.32-.03.652-.331.82-1.23.397-2.126 1.179-6.73 1.36-8.628a2.112 2.112 0 0 0-.02-.472.506.506 0 0 0-.172-.325c-.143-.117-.365-.142-.465-.14-.451.008-1.143.249-4.476 1.635Z" clip-rule="evenodd"/><rect width="26" height="26" x="1" y="1" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2" rx="13"/>
+                </svg>
                 <span class="visually-hidden">ссылка на Телеграмм</span>
               </a>
             </li>
             <li class="social-item">
               <a href="https://vk.com/htmlacademy" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+                  <path fill="#FCFCFC" fill-rule="evenodd" d="M26 14c0 6.627-5.373 12-12 12S2 20.627 2 14 7.373 2 14 2s12 5.373 12 12Zm-11.412 2.975h-.717s-1.582.083-2.976-1.188c-1.52-1.388-2.863-4.14-2.863-4.14s-.077-.18.007-.268c.095-.098.352-.104.352-.104l1.715-.01s.161.024.277.098a.476.476 0 0 1 .149.176s.277.615.644 1.17c.716 1.085 1.05 1.322 1.293 1.206.354-.17.248-1.533.248-1.533s.007-.495-.178-.716c-.143-.17-.414-.22-.533-.235-.096-.011.062-.207.267-.295.309-.133.854-.14 1.498-.135.501.005.645.032.842.074.455.096.44.405.41 1.07-.01.2-.02.43-.02.697 0 .06-.002.124-.004.19-.01.34-.023.73.233.876.132.074.453.011 1.256-1.185.381-.566.667-1.233.667-1.233s.062-.119.16-.17c.098-.052.232-.036.232-.036l1.805-.01s.542-.056.63.158c.091.226-.203.751-.94 1.612-.696.813-1.036 1.115-1.01 1.38.02.196.242.372.67.72.888.722 1.124 1.101 1.18 1.192a.447.447 0 0 0 .011.016c.398.578-.44.623-.44.623l-1.603.02s-.345.06-.798-.214c-.237-.142-.469-.375-.69-.597-.337-.339-.649-.652-.915-.578-.447.124-.433.967-.433.967s.004.18-.098.276c-.11.105-.328.126-.328.126Z" clip-rule="evenodd"/><rect width="26" height="26" x="1" y="1" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2" rx="13"/>
+                </svg>
                 <span class="visually-hidden">ссылка на Вконтакте</span>
               </a>
             </li>
             <li class="social-item">
               <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none">
+                  <path fill="#FCFCFC" d="m16.004 13.791-2.808-1.31c-.245-.114-.446.014-.446.285v2.468c0 .271.201.399.446.285l2.807-1.31c.246-.115.246-.303 0-.418ZM14 2C7.372 2 2 7.372 2 14s5.372 12 12 12 12-5.372 12-12S20.628 2 14 2Zm0 16.875c-6.143 0-6.25-.554-6.25-4.875S7.857 9.125 14 9.125c6.142 0 6.25.554 6.25 4.875s-.108 4.875-6.25 4.875Z"/><rect width="26" height="26" x="1" y="1" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2" rx="13"/>
+                </svg>
                 <span class="visually-hidden">ссылка на Ютуб</span>
               </a>
             </li>
@@ -458,4 +555,3 @@
 
   </body>
 </html>
-
